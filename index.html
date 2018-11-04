@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title> Submission </title>
+	<script type="text/javascript">
+
+		function check_info(){
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+
+			if (username=="" || password==""){
+
+				alert('Please enter valid username and password.');
+				return false;
+
+			}else{
+
+				return false;
+
+			}
+
+		}
+
+	</script>
+</head>
+<body>
+	<form action="profile.html" method="post" onsubmit="return check_info();">
+		Username:<input type="text" name="username" id="username"/>
+		Password:<input type="password" name="password" id="password"/>
+		<input type="submit" value="Login"/>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+</body>
